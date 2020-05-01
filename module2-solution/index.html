@@ -1,196 +1,233 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>my first page</title>
-	<style type="text/css">
-	
-	
-	div.relative {
-  position: relative;
-  width:auto;
-  height:auto;
-} 
+<!DOCTYPE HTML>
 
-h4.absolute {
-  position: absolute;
-  top:7px;;
-  float:right;
-  right:12px;
-  border: 1px solid green;
-  background-color:white;
-  width:auto;
+<html>
+
+<head>
+
+<meta charset="utf-8">
+
+<title>Assignment Solution for Module 2</title>
+
+<style>
+* {
+
+    box-sizing: border-box;
+
+
 }
-	
-	
-   *{
-		padding:1%;
-	}
-	
-	h1 {
-  margin-bottom: 15px;
-  text-align:center;
+
+
+
+body {
+
+    margin: 0;
+
+    padding: 0;
+
 }
-	p {
-  border: 1px solid black;
-  background-color: blue;
-  width:auto;
-  height:auto;
-  padding:8px;
-  padding-top:47px;
-  margin-right: auto;
-  margin-left: auto;
-  font-family: Helvetica;
-  color: white;
+
+
+
+h1 {
+
+    font-size: 1.75em;
+
+    text-align: center;
+
 }
-		.row {
-  width: 100%;
+
+
+
+section {
+
+    background-color: blue;
+
+    border: 1px solid #000000;
+
+    margin: 0 0 25px 0;
+
+    padding: 0;
+
 }
-h3
-{
-	border:1px solid black;
-	background-color:red;
-	width:50px;
-	padding-left:10px;
+
+
+
+section h2 {
+
+    border-bottom: 1px solid #000000;
+
+    border-left: 1px solid #000000;
+
+    margin: 0 0 0 60%;
+
+    font-size: 1.25em;
+
+    text-align: center;
+
+    padding: 2px 0;
+
+    width: 40%;
+
 }
+
+
+
+section p {
+
+    padding: 0 6px 4px 6px;
+
+}
+
+
+
+#chicken h2 {
+
+    background-color: #d59898;
+
+    color: #161616;
+
+}
+
+
+
+#beef h2 {
+
+    background-color: #c14543;
+
+    color: #e8e8e8;
+
+}
+
+
+
+#sushi h2 {
+
+    background-color: #e5d198;
+
+    color: #161616;
+
+}
+
+
+
+
+
+
+
 @media (min-width: 992px) {
-  .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12 {
-    float: left;
-  }
-  .col-lg-1 {
-    width: 8.33%;
-  }
-  .col-lg-2 {
-    width: 16.66%;
-  }
-  .col-lg-3 {
-    width: 25%;
-  }
-  .col-lg-4 {
-    width: 33.33%;
-  }
-  .col-lg-5 {
-    width: 41.66%;
-  }
-  .col-lg-6 {
-    width: 50%;
-  }
-  .col-lg-7 {
-    width: 58.33%;
-  }
-  .col-lg-8 {
-    width: 66.66%;
-  }
-  .col-lg-9 {
-    width: 74.99%;
-  }
-  .col-lg-10 {
-    width: 83.33%;
-  }
-  .col-lg-11 {
-    width: 91.66%;
-  }
-  .col-lg-12 {
-    width: 100%;
-  }
+
+    section {
+
+        float: left;
+
+        margin-right: 2.5%;
+
+        width: 30%;
+
+    }
+
+
+
+    #chicken {
+
+        margin-left: 2.5%;
+
+    }
+
 }
+
+
 
 @media (min-width: 768px) and (max-width: 991px) {
-  .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
-    float:left;
-  }
-  .col-md-1 {
-    width: 8.33%;
-  }
-  .col-md-2 {
-    width: 16.66%;
-  }
-  .col-md-3 {
-    width: 25%;
-  }
-  .col-md-4 {
-    width: 33.33%;
-  }
-  .col-md-5 {
-    width: 41.66%;
-  }
-  .col-md-6 {
-    width: 50%;
-  }
-  .col-md-7 {
-    width: 58.33%;
-  }
-  .col-md-8 {
-    width: 66.66%;
-  }
-  .col-md-9 {
-    width: 74.99%;
-  }
-  .col-md-10 {
-    width: 83.33%;
-  }
-  .col-md-11 {
-    width: 91.66%;
-  }
-  .col-md-12 {
-    width: 100%;
-  }
+
+    section {
+
+        float: left;
+
+        margin-right: 2.5%;
+
+        width: 46.25%;
+
+    }
+
+    #chicken {
+
+        margin-left: 2.5%;
+
+    }
+
+
+
+    #sushi {
+
+        clear: left;
+
+        margin-left: 2.5%;
+
+        width: 95%;
+
+    }
+
+
+
+    #sushi h2 {
+
+        margin: 0 0 0 80%;
+
+        width: 20%;
+
+    }
+
 }
 
-@media (min-width: >=767px) {
-  .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
-    float: left;
-   
-  }
-  .col-sm-1 {
-    width: 8.33%;
-  }
-  .col-sm-2 {
-    width: 16.66%;
-  }
-  .col-sm-3 {
-    width: 25%;
-  }
-  .col-sm-4 {
-    width: 33.33%;
-  }
-  .col-sm-5 {
-    width: 41.66%;
-  }
-  .col-sm-6 {
-    width: 50%;
-  }
-  .col-sm-7 {
-    width: 58.33%;
-  }
-  .col-sm-8 {
-    width: 66.66%;
-  }
-  .col-sm-9 {
-    width: 74.99%;
-  }
-  .col-sm-10 {
-    width: 83.33%;
-  }
-  .col-sm-11 {
-    width: 91.66%;
-  }
-  .col-sm-12 {
-    width: 100%;
-  }
+@media (max-width: 767px) {
+
+    section {
+
+        margin-left: 2.5%;
+
+        margin-right: 2.5%;
+
+        width: 95%;
+
+    }
+
 }
-	</style>
+</style>
+
 </head>
-<body>
-<h1>Module2 Solution</h1>
 
-  <div class="row">
-  <div class=" relative col-lg-3 col-md-6 col-sm-4"><p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-  <h4 class="absolute">HEADING 1</h4></div>
-  <div class=" relative col-lg-3 col-md-6 col-sm-4"><p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-  <h4 class="absolute">HEADING 2</h4></div>
-  <div class=" relative col-lg-3 col-md-12 col-sm-4"><p>a b c d e f g h i j k l m n o p q r s t u v w x y z</p>
-  <h4 class="absolute">HEADING 3</h4></div>
- </div>
+<body>
+
+<header>
+
+    <h1>HEADIND 1</h1>
+
+</header>
+
+<section id="chicken">
+
+    <h2>HEADING 2</h2>
+
+    <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z.</p>
+
+  </section>
+
+  <section id="beef">
+
+    <h2>HEADING 3</h2>
+
+    <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z.</p>
+
+</section>
+
+<section id="sushi">
+
+    <h2>HEADING 4</h2>
+
+    <p>A B C D E F G H I J K L M N O P Q R S T U V W X Y Z.</p>
+
+</section>
 
 </body>
 </html>
